@@ -31,17 +31,20 @@ const Hero = () => {
     }, [])
     return (
         <div className='hero'>
+           
             <div className='slider'>
                 <div className="slider-child" id="slide-last">
                     <div className='slider-child-media'>
                         <img src={hp1} alt="" className='w-full h-full object-cover'/>
                     </div>
-                    <div className='slider-child-text text-[5.5rem] md:text-8xl xl:text-9xl text-slate-200 uppercase font-bold'>king of skies</div>
+                    
                 </div>
                 <div className="slider-child overflow-hidden" >
                    <video src={hv} muted={true} autoPlay={true} loop={true} controls={true} className='object-cover w-full h-full'/>
                 </div>
+                 <div className='slider-child-text text-[4.7rem] md:text-8xl xl:text-9xl text-slate-200 uppercase font-bold'>king of skies</div>
             </div>
+            
         </div>
     )
 }
